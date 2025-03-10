@@ -1,0 +1,118 @@
+/* หัวข้อหลัก (Header) */
+.header {
+    color: #FFFFFF; /* สีขาวสำหรับพื้นหลังสีดำ */
+    text-align: center;
+    padding: 1.5rem 0; /* เพิ่มระยะห่างด้านบน-ล่าง */
+    font-size: 2.5rem; /* ขนาดตัวอักษรใหญ่ขึ้น */
+    font-weight: bold; /* ตัวหนา */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* เงาเล็กน้อยเพื่อความสวยงาม */
+    letter-spacing: 1px; /* ช่องว่างระหว่างตัวอักษร */
+}
+
+/* ขั้นตอน (Step Navigation) */
+.step-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: #000000; /* สีดำสำหรับตัวเลขในวงกลม */
+    font-weight: bold;
+    transition: all 0.3s ease; /* การเปลี่ยนแปลงแบบเรียบเนียน */
+}
+
+.step.active {
+    background-color: #6FBFAC; /* สีเขียวตามดีไซน์เดิม */
+    color: #FFFFFF; /* สีขาวในวงกลมเมื่อ active */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงาเพื่อให้เด่นขึ้น */
+}
+
+.step-line {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    right: 40px;
+    height: 2px;
+    background-color: #ddd;
+    z-index: 1;
+}
+
+.step-label {
+    text-align: center;
+    font-size: 0.9rem; /* เพิ่มขนาดตัวอักษรเล็กน้อย */
+    color: #000000; /* สีขาวให้เข้ากับพื้นหลังดำ */
+    margin-top: 0.5rem;
+    font-weight: 500; /* ตัวหนานิดหน่อย */
+}
+
+/* ปรับพื้นหลังทั้งหน้าให้เป็นสีดำ */
+.main {
+    background-color: #a6edff; /* เปลี่ยนเป็นสีดำ */
+}
+
+.stApp {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #a6edff; /* ตรวจสอบว่า Streamlit App ใช้สีดำ */
+}
+
+/* ปรับการแสดงผลของการ์ดให้เข้ากับพื้นหลังสีดำ */
+.card {
+    background-color: #a6edff; /* สีเทาดำเข้มสำหรับการ์ด */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* เงาเข้มขึ้น */
+    margin-bottom: 1.5rem;
+    color: #000000; /* ตัวอักษรในการ์ดเป็นสีขาว */
+}
+
+/* ปรับปุ่มให้เข้ากับดีไซน์ */
+.next-button {
+    background-color: #6FBFAC;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease; /* การเปลี่ยนสีแบบเรียบเนียน */
+}
+
+.next-button:hover {
+    background-color: #5DA999;
+}
+
+/* ปรับสีสำหรับจำนวนเงินและภาษี */
+.amount-display {
+    color: #6FBFAC; /* สีเขียวตามดีไซน์ */
+    font-weight: bold;
+}
+
+.tax-display {
+    color: #E05263; /* สีแดงสำหรับภาษี */
+    font-weight: bold;
+}
+
+.custom-image {
+    width: 100%; /* หรือกำหนดขนาดเอง เช่น width: 300px; */
+    max-width: 500px;
+    height: auto; /* ป้องกันภาพบิดเบี้ยว */
+    display: block;
+    margin: 1rem auto; /* จัดกึ่งกลาง */
+    border-radius: 10px; /* ทำให้มุมมน */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
